@@ -1,0 +1,37 @@
+body {
+    margin: 0;
+    width: 100%;
+    overflow-x: hidden;
+    background-color: black !important;
+}
+canvas{
+    width: 100vw !important;
+    height: 100vh !important;
+    overflow: hidden;
+    position: fixed;
+    opacity: .5;
+}
+.navbar{
+    opacity: 0.8;
+}
+.navbar-img{
+    width: 5rem;
+    height: 2rem;
+}
+.nav-underline:hover:after {
+    position: relative;
+    width: 100%; 
+    left: 0; 
+}
+.nav-underline:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 3px;
+    left: 0%;
+    position: relative;
+    background: rgba(85, 85, 85, 0.9);
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }

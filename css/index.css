@@ -1,0 +1,8 @@
+.blank-canvas{
+  height: 100vh;
+}
+.platform-fixed{
+  width: calc(50% - 3rem);
+  position: fixed !important;
+  top: 3rem;
+}
