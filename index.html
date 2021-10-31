@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/main.css">
-    <link rel="stylesheet" href="/css/index.css">
-    <link rel="stylesheet" href="/css/modules/bootstrap.min.css">
-    <script src="/js/modules/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/modules/bootstrap.min.css">
+    <script src="./js/modules/bootstrap.bundle.min.js"></script>
     <title>國立中央大學太空科學與科技研究中心</title>
 </head>
 <body>
-    <div include-html="/inc/header.html"></div>
+    <div include-html="./inc/header.html"></div>
     <canvas id="earth"></canvas>
     <div class="blank-canvas"></div>
 
@@ -74,7 +74,7 @@
                           <h3 class="card-title fw-bold text-center text-white">相關平台</h3>
                         </div>
                         <a href="https://www.facebook.com/NCUinSpace/" rel="external" target="_blank">
-                            <img src="/img/fb_qrcode.png" class="card-img-bottom img-fluid" alt="fb qrcode">
+                            <img src="./img/fb_qrcode.png" class="card-img-bottom img-fluid" alt="fb qrcode">
                         </a>
                     </div>
                 </div>
@@ -87,7 +87,7 @@
                       <h3 class="card-title fw-bold text-center text-white">相關平台</h3>
                     </div>
                     <a href="https://www.facebook.com/NCUinSpace/" rel="external" target="_blank">
-                        <img src="/img/fb_qrcode.png" class="card-img-bottom img-fluid" alt="fb qrcode">
+                        <img src="./img/fb_qrcode.png" class="card-img-bottom img-fluid" alt="fb qrcode">
                     </a>
                 </div>
             </div>
@@ -95,10 +95,10 @@
 
     </div>
 
-    <script type="module" src="/js/globe.js"></script>
-    <script src="/js/modules/include.js"></script>
+    <script type="module" src="./js/globe.js"></script>
+    <script src="./js/modules/include.js"></script>
     <script type="module">
-        import {globeAnimation} from '/js/globe.js'
+        import {globeAnimation} from './js/globe.js'
         function animate(){
             requestAnimationFrame(animate);
             console.log()
