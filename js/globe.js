@@ -2,6 +2,7 @@ import * as THREE from "./modules/three.module.js"
 import {FontLoader} from "./modules/FontLoader.js"
 import {TextGeometry} from "./modules/TextGeometry.js";
 import {Flow} from "./modules/CurveModifier.js";
+import {GLTFLoader} from '/js/modules/GLTFLoader.js'
 import SHADER from "./modules/shaders.js"
 
 const canvasContainer = document.getElementById('earth');
@@ -37,6 +38,7 @@ class Satellite{
         this.phase = phase;
         this.xRotate = xRotate;
         this.yRotate = yRotate;
+        this.group = new THREE.Group();
 
         this.initOrbit(orbitColor);
         this.initBody(bodyColor);
@@ -59,27 +61,29 @@ class Satellite{
     }
 
     initBody(bodyColor){
-        this.body = new THREE.Mesh(
-            new THREE.CylinderGeometry(.2, .2, .2 ,50, 50),
-            new THREE.MeshBasicMaterial({
-                color: bodyColor
-            })
-        )
+        const loader = new GLTFLoader();
+        loader.load('/inc/cubesat_3u.gltf', (gltf) => {
+            this.body = gltf.scene.children[0];
+            this.body.rotateZ(this.phase);
+            this.body.translateX(this.orbitHeight);
+            this.body.rotateZ(Math.PI / 2);
+            this.body.scale.set(1.5, 1.5, 1.5);
+
+            this.group.add(this.body);
+            satellites.add(this.group);
+            satelliteBodys.push(this.group);
+        })
     }
 
     create(){
-        this.body.rotateZ(this.phase);
-        this.body.translateX(this.orbitHeight);
-        const tmpGroup = new THREE.Group();
-        tmpGroup.add(this.body);
-        tmpGroup.add(this.orbit);
-        tmpGroup.rotateX(this.xRotate);
-        tmpGroup.rotateY(this.yRotate);
-
-        satellites.add(tmpGroup);
-        satelliteBodys.push(tmpGroup);
+        this.group.add(this.orbit);
+        this.group.rotateX(this.xRotate);
+        this.group.rotateY(this.yRotate);
     }
 }
+
+const light = new THREE.AmbientLight( 0xFFFFFF );
+scene.add( light );
 
 class TextSatellite extends Satellite{
 
@@ -151,8 +155,8 @@ class TextSatellite extends Satellite{
 
 new Satellite(0xF7DC6F, 0xEB984E).create();
 new Satellite(0xD98880, 0xD5F5E3, 0, -2.1, 0).create();
-new Satellite(0xFFFFFF, 0x85C1E9, 1, 2, 1).create();
-new Satellite(0x2ECC71, 0xECF0F1, 3, 1, 5).create();
+new Satellite(0xFFFFFF, 0x85C1E9, 2, 3, 1).create();
+new Satellite(0x2ECC71, 0xECF0F1, 3, 1, 2).create();
 const text = new TextSatellite("Welcome to CAPE", 0xFF0000, 0xFFFFFF, 0, 1.6, 0);
 text.create();
 
@@ -226,7 +230,7 @@ const stars = new THREE.Points(
 )
 scene.add(stars)
 
-camera.position.z = 20;
+camera.position.z = 15;
 
 function onWindowResize() {
 
