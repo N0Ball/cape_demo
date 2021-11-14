@@ -1,9 +1,9 @@
-import * as THREE from "./modules/three.module.js"
-import {FontLoader} from "./modules/FontLoader.js"
-import {TextGeometry} from "./modules/TextGeometry.js";
-import {Flow} from "./modules/CurveModifier.js";
-import {GLTFLoader} from '/js/modules/GLTFLoader.js'
-import SHADER from "./modules/shaders.js"
+import * as THREE from "./threejs/three.module.js"
+import {FontLoader} from "./threejs/FontLoader.js"
+import {TextGeometry} from "./threejs/TextGeometry.js";
+import {Flow} from "./threejs/CurveModifier.js";
+import {GLTFLoader} from './threejs/GLTFLoader.js'
+import SHADER from "./threejs/shaders.js"
 
 const canvasContainer = document.getElementById('earth');
 
