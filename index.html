@@ -1,9 +1,45 @@
 <!DOCTYPE html>
-<html lang="zh-tw">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/main.css">
+<<<<<<< HEAD
+    <link rel="stylesheet" href="./css/modules/bootstrap.min.css">
+    <title>CAPE - index</title>
+</head>
+<body>
+
+    <!-- Header -->
+    <div include-html="./inc/html/header.html"></div>
+
+    <!-- Hero -->
+    <div class="container">
+        <h3 class="d-flex text-white justify-content-center mt-5 p-3">近況</h3>
+        <div class="" include-html="./inc/html/hero.html" id="hero"></div>
+    </div>
+
+    <div class="d-flex justify-content-center align-items-center m-5">
+        <img width="40" height="40" src="./img/item/arrow.png" alt="arrow tip" class="tip-down">
+    </div>
+
+        <!-- Dynamic Reports -->
+        <h3 class="d-flex text-white justify-content-center" id="DynamicReports">動態報導</h3>
+        <div include-html="./inc/html/dyReport.html" class="container"></div>
+
+        <!-- Satellite Missions -->
+        <h3 class="d-flex text-white justify-content-center m-5" id="SatMissions">衛星任務</h3>
+        <div class="container text-white fs-5">
+            <li class="ul">IDEASSat/INSPIRESat-2 ： 2020/01/24搭載SpaceX的獵鷹火箭順利發射</li>
+            <li class="ul">INSPIRESat-1</li>
+            <li class="ul">ILITE</li>
+            <li class="ul">ARCADE/INSPIRESat-4</li>
+            <li class="ul">PEARL</li>
+            <li class="ul">SCION-X/INSPIRESat-6</li>
+
+            <img src="./img/sat_mission.png" alt="sat mission image" class="img-fluid m-3">
+=======
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./css/modules/bootstrap.min.css">
     <link rel="icon" href="./favicon.ico">
@@ -92,10 +128,42 @@
                     </a>
                 </div>
             </div>
+>>>>>>> main
         </div>
+
+        <!-- Facilities -->
+        <h3 class="d-flex text-white justify-content-center m-5" id="Facilities">研究設施</h3>
+        <div include-html="./inc/html/facilities.html" class="container"></div>
 
     </div>
 
+<<<<<<< HEAD
+
+    <!-- Load HTML -->
+    <script type="module">
+        import {IncludeHTML} from "./js/modules/include.js";
+
+        class NewInclude extends IncludeHTML{
+            loadAfter(){
+                super.loadAfter();
+                const script = document.createElement('script');
+                script.src = './js/modules/masonry/masonry.pkgd.min.js';
+                document.body.appendChild(script);
+
+                const bs = document.createElement('script');
+                bs.src = './js/modules/bootstrap/bootstrap.bundle.min.js';
+                document.body.appendChild(bs);
+
+                const url = document.URL.split('#')[1];
+
+                if(url){
+                    setTimeout(()=>{
+                        location.href = "#" + url;
+                        console.log("OUO");
+                    }, 500);
+                }
+
+=======
     <script type="module" src="./js/globe.js"></script>
     <script src="./js/modules/include.js"></script>
     <script type="module">
@@ -109,11 +177,11 @@
                 qrcode.classList.add("platform-fixed");
             }else{
                 qrcode.classList.remove("platform-fixed")
+>>>>>>> main
             }
         }
 
-        animate();
-        includeHTML();
+        const include = new NewInclude();
     </script>
 </body>
 </html>

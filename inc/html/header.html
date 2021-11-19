@@ -1,0 +1,260 @@
+<!-- NavBar -->
+<nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="./index.html">
+            <img class="navbar-img" src="/favicon.ico" alt="icon">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        中心簡介
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                        <li><a class="dropdown-item nav-underline" href="./index.html#DynamicReports">動態報導</a></li>
+                        <li><a class="dropdown-item nav-underline" data-bs-toggle="modal" href="#objectiveModalToggle">推動目標</a></li>
+                        <li><a class="dropdown-item nav-underline" data-bs-toggle="modal" href="#statusModalToggle">整體現況</a></li>
+                        <li><a class="dropdown-item nav-underline" data-bs-toggle="modal" href="#NIYModalToggle">規章辦法</a></li>
+                        <li><a class="dropdown-item nav-underline" data-bs-toggle="modal" href="#researchModalToggle">研究方向</a></li>
+                        <li><a class="dropdown-item nav-underline" data-bs-toggle="modal" href="#newsModalToggle">會議資訊</a></li>
+                        <li><a class="dropdown-item nav-underline" data-bs-toggle="modal" href="#spaceModalToggle">研究空間</a></li>
+                        <li><a class="dropdown-item nav-underline" href="./index.html#Facilities">研究設施</a></li>
+                        <li><a class="dropdown-item nav-underline" href="./index.html#SatMissions">衛星任務</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item nav-underline" data-bs-toggle="modal" href="#NIYModalToggle">PUBLICATION</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        關於我們
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                        <li><a class="dropdown-item nav-underline" href="./about.html?reload=0#home">總覽</a></li>
+                        <li><a class="dropdown-item nav-underline" href="./about.html?reload=1#member">中心成員</a></li>
+                        <li><a class="dropdown-item nav-underline" href="./about.html?reload=2#researcher">兼任研究員</a></li>
+                        <li><a class="dropdown-item nav-underline" href="./about.html?reload=3#assistant">專任助理</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-underline" href="./project.html">特色領域研究中心計畫</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-underline" href="#">活動資訊</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-underline" href="#">聯絡我們</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-underline" href="https://www.ncu.edu.tw" rel="external" target="_blank">中央大學</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Modals -->
+<div class="modal fade" id="objectiveModalToggle" aria-hidden="true" aria-labelledby="objectiveModalToggleLabel" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="objectiveModalToggleLabel">推動目標</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                太空科學與科技研究中心推動目標為整合過去 50 年之太空科學教育和研究基礎與近 30 年之太空工程和科技，完整建構立方和小衛星及其地面系統。本中心將進行電離層天氣預報，用以監測和確保衛星定位、導航、通訊品質與安全，並建置完成地震前兆、海嘯預警、空污遙測等系統。相關開發之太空衛星科技和觀測資料，可大幅提升我國太空科技和學術水準。
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade text-dark" id="statusModalToggle" aria-hidden="true" aria-labelledby="statusModalToggleLabel" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="statusModalToggleLabel">整體現況</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                在太空科學方面，福衛一號觀察發現電離層電漿洞外，記錄有全世界最完整之低緯度電漿結構與動力，和低緯度不規則體變化與分佈，相關成果對民生和國防電波通訊應用至為重要。此外，福衛二號邊緣掃瞄大氣暉光，可研究探討高層和低層大氣波動耦合及交互作用。福衛三號掩星觀測除天氣預報之主要作業任務外，亦首次為人類提供三維電離層電子濃度結構和動力。藉此資料，本中心已發展全世界最先進之電離層太空天氣全球全電子含量監測模式，全球電子濃度三維現報和預報同化模式。此外，藉由福衛三號S4觀測資料，本中心亦建構完成全球電離層閃爍預報模式。上述四個同化和預測模式，大幅提升我國衛星定位、導航和通訊之監測與應用能力。研究團隊亦利用福衛一號和法國 DEMETER 衛星觀測資料，證實福衛五號先進電離層探測儀將可成為觀察地震孕震電場，以及電離層太空天氣不規則體變化和分佈之利器。
+                <br>
+                <br>
+                在太空科技方面，歷經我國第一期與第二期的國家太空科技發展長程計畫，本中心透過參與福爾摩沙衛星科學任務，確定科學酬載的發展方向。藉由探空火箭科學酬載計畫，到國外學習研製科學酬載，逐步掌握科學酬載的研製技術。經由福衛五號科學酬載先進電離層探測儀研製計畫的洗禮，大幅躍進科學酬載的研製能力。並在 2017 年福衛五號升空後，順利獲得高精度與高解析度的量測資料，確立自行研製的科學酬載已達成衛星等級的最高技術成熟度。透過此一成功的進程，未來希望推動年輕的學者與學生能嘗試發展更多樣的科學酬載，提升我國自主太空科學研究的能量。
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade text-dark" id="researchModalToggle" aria-hidden="true" aria-labelledby="researchModalToggleLabel" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="researchModalToggleLabel">研究方向</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                透過新一代自主開發的太空元件（光纖陀螺儀、星象儀）、衛星次系統（姿態決定與控制、衛星電腦、電源管理）、科學酬載（小型電離層探測儀、GNSS 掩星儀、高光譜影像儀）、立方衛星本體（國際合作 INSPIRESat-1、國內自組 IDEASSat、國內自製 SCION），配合規畫的實驗廠房（可容納衛星地面接收站、任務控制中心、關鍵實驗室等）與地面設施（姿態決定與控制測試、電磁相容測試、熱真空測試自動化設備等），建構完整的太空產業與人才培訓供應鏈，迎接即將開始的第三期國家太空科技發展長程計畫（2019-2033年）。除了充分使用國家實驗研究院國家太空中心（以下簡稱太空中心）與國家中山科學研究院（以下簡稱中科院）提供的探空火箭與立方衛星發射機會，完備太空產業所需的飛行認證。我們將自行規畫新的 SCION （SCintillation and IOnosphere Network）立方衛星科學任務，裝載本中心自製的科學酬載與衛星次系統，作為取代福衛七號第二組星系的前導任務，實現自主的太空科學研究。同時我們也會使用福衛五號與七號第一組星系的科學資料，結合交通部中央氣象局太空天氣作業辦公室的需求，達成太空天氣、電離層地震前兆、海嘯預警、空污遙測等前沿研究領先國際和防災減災的目標。以因應世界朝向無人汽車與無人客機導航，對新一代太空天氣現報與預報的需求。
+                <br><br>
+                <strong class="fs-5">太空元件：</strong><br>
+                &ensp;&ensp;FOG 光纖陀螺儀
+                <br>
+                &ensp;&ensp;STR 星象儀
+                <br><br>
+                <strong class="fs-5">次系統：</strong><br>
+                &ensp;&ensp;ADCS 姿態決定與控制
+                <br>
+                &ensp;&ensp;CDH 衛星電腦
+                <br>
+                &ensp;&ensp;EPS 電源管理
+                <br><br>
+                <strong class="fs-5">科學酬載：</strong><br>
+                &ensp;&ensp;CIP 小型電離層探測儀
+                <br>
+                &ensp;&ensp;GNSS 掩星儀
+                <br>
+                &ensp;&ensp;HSI 高光譜影像儀
+                <br><br>
+                <strong class="fs-5">立方衛星本體：</strong><br>
+                &ensp;&ensp;INSPIRESat-1
+                <br>
+                &ensp;&ensp;IDEASSat
+                <br>
+                &ensp;&ensp;SCION
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade text-dark" id="spaceModalToggle" aria-hidden="true" aria-labelledby="spaceModalToggleLabel" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="spaceModalToggleLabel">研究空間</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                太空科學與工程研究所：位於本校健雄館八樓全層與九樓半層的空間，加上中壢特高頻雷達站。擁有實驗室共計 9 間，研究總面積 663 m^2。其中最具規模的實驗室有電離層電波科學實驗室、太空酬載實驗室－核心設備與教學設施、高空動力實驗室、中層大氣電學實驗室等，分別由四位核心成員所帶領。但在近年蓬勃發展下，研究空間已不敷使用。校方將暫時提供本校科學二館二樓約200 m^2的面積，以容納衛星地面接收站、任務控制中心、關鍵實驗室等。其他需求待校方完成教研大樓後，再依實際需求調整。
+                <br>
+                <br>
+                光電科學與工程學系：位於本校國鼎光電大樓，為地上五層、地下一層之建築。擁有實驗室共計 58 間，總面積 3,344.9 m^2。主要研究設施包含薄膜技術中心、光學元件封裝與量測技術中心、積體光學、奈米光電、太陽能光電、光學設計、光學檢測、計算式光學影像、生醫影像、影像科學與工程、動態全像、奈微米光學、液晶光電、色彩光學、雷射光學等實驗室，完整建立光學設計、光學模擬計算、光學製造、光學檢測及光學封裝等各式軟硬體設備，為全國最具完善設施之光電研究群之一。
+            </div>
+            <div class="modal-footer d-flex justify-content-center">
+                <img class="img-fluid" src="./img/header/space.jpg" alt="space location image">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade text-dark" id="newsModalToggle" aria-hidden="true" aria-labelledby="newsModalToggle" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="newsModalToggle">每月定期召開中心會議及太空科學研究進度與成果會議</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <h4 class="text-primary mt-3">2021</h4>
+                <ol class="list-group list-group-numbered">
+                    <li class="list-group-item">2021/10/29：召開110年太空科學研究進度與成果第9次會議。</li>
+                    <li class="list-group-item">2021/10/22：召開110年第9次中心會議。</li>
+                    <li class="list-group-item">2021/10/01：召開110年太空科學研究進度與成果第8次會議。</li>
+                    <li class="list-group-item">2021/09/15：召開110年第8次中心會議。</li>
+                    <li class="list-group-item">2021/09/01：召開110年太空科學研究進度與成果第7次會議。</li>
+                    <li class="list-group-item">2021/08/11：召開110年第7次中心會議。</li>
+                    <li class="list-group-item">2021/07/27：召開110年太空科學研究進度與成果第6次會議。</li>
+                    <li class="list-group-item">2021/07/22：召開110年第6次中心會議。</li>
+                    <li class="list-group-item">2021/06/29：召開110年太空科學研究進度與成果第5次會議。</li>
+                    <li class="list-group-item">2021/05 ：110年太空科學研究進度與成果第4次會議(書面報告)。</li>
+                    <li class="list-group-item">2021/06/28：召開110年第5次中心會議。</li>
+                    <li class="list-group-item">2021/05/24：召開110年第4次中心會議。</li>
+                    <li class="list-group-item">2021/04/27：召開110年太空科學研究進度與成果第3次會議。</li>
+                    <li class="list-group-item">2021/04/20：召開110年第3次中心會議。</li>
+                    <li class="list-group-item">2021/03/29：召開110年太空科學研究進度與成果第2次會議。</li>
+                    <li class="list-group-item">2021/03/05：召開110年第2次中心會議。</li>
+                    <li class="list-group-item">2021/02/23：召開110年太空科學研究進度與成果第1次會議。</li>
+                    <li class="list-group-item">2021/02/04：召開110年第1次中心會議。</li>
+                </ol>
+                <h4 class="text-primary mt-3">2020</h4>
+                <ol class="list-group list-group-numbered">
+                    <li class="list-group-item">2020/12/22：召開109年第11次中心會議。</li>
+                    <li class="list-group-item">2020/11/25：召開109年太空科學研究進度與成果第10次會議。</li>
+                    <li class="list-group-item">2020/11/11：召開109年第10次中心會議。</li>
+                    <li class="list-group-item">2020/10/29：召開109年太空科學研究進度與成果第9次會議。</li>
+                    <li class="list-group-item">2020/10/16：召開109年第9次中心會議。</li>
+                    <li class="list-group-item">2020/09/30：召開109年太空科學研究進度與成果第8次會議。</li>
+                    <li class="list-group-item">2020/09/03：召開109年第8次中心會議。</li>
+                    <li class="list-group-item">2020/08/28：召開109年太空科學研究進度與成果第7次會議。</li>
+                    <li class="list-group-item">2020/08/05：召開109年第7次中心會議。</li>
+                    <li class="list-group-item">2020/07/31：召開109年太空科學研究進度與成果第6次會議。</li>
+                    <li class="list-group-item">2020/07/08：召開109年第6次中心會議。</li>
+                    <li class="list-group-item">2020/06/22：召開109年太空科學研究進度與成果第5次會議。</li>
+                    <li class="list-group-item">2020/06/04：召開109年第5次中心會議。</li>
+                    <li class="list-group-item">2020/05/29：召開109年太空科學研究進度與成果第4次會議。</li>
+                    <li class="list-group-item">2020/04/30：召開109年太空科學研究進度與成果第3次會議。</li>
+                    <li class="list-group-item">2020/04/30：召開109年第4次中心會議。</li>
+                    <li class="list-group-item">2020/03/27：召開109年太空科學研究進度與成果第2次會議。</li>
+                    <li class="list-group-item">2020/03/23：召開109年第3次中心會議。</li>
+                    <li class="list-group-item">2020/02/27：召開109年太空科學研究進度與成果第1次會議。</li>
+                    <li class="list-group-item">2020/02/24：召開109年第2次中心會議。</li>
+                    <li class="list-group-item">2020/01/21：召開109年第1次中心會議。</li>
+                </ol>
+                <h4 class="text-primary mt-3">2019</h4>
+                <ol class="list-group list-group-numbered">
+                    <li class="list-group-item">2019/12/17：召開108年第12次中心會議。</li>
+                    <li class="list-group-item">2019/11/25：召開太空科學研究進度與成果第9次會議。</li>
+                    <li class="list-group-item">2019/11/11：召開108年第11次中心會議。</li>
+                    <li class="list-group-item">2019/10/31：召開太空科學研究進度與成果第8次會議。</li>
+                    <li class="list-group-item">2019/09/26：召開太空科學研究進度與成果第7次會議。</li>
+                    <li class="list-group-item">2019/09/19：召開108年第10次中心會議。</li>
+                    <li class="list-group-item">2019/08/30：召開太空科學研究進度與成果第6次會議。</li>
+                    <li class="list-group-item">2019/08/28：召開108年第9次中心會議。</li>
+                    <li class="list-group-item">2019/07/26：召開太空科學研究進度與成果第5次會議。</li>
+                    <li class="list-group-item">2019/07/23：召開108年第8次中心會議。</li>
+                    <li class="list-group-item">2019/06/14：召開太空科學研究進度與成果第4次會議。</li>
+                    <li class="list-group-item">2019/06/11：召開108年第7次中心會議。</li>
+                    <li class="list-group-item">2019/05/23：召開108年第6次中心會議。</li>
+                    <li class="list-group-item">2019/04/26：召開太空科學研究進度與成果第3次會議。</li>
+                    <li class="list-group-item">2019/04/25：召開108年第5次中心會議。</li>
+                    <li class="list-group-item">2019/04/03：召開108年第4次中心會議。</li>
+                    <li class="list-group-item">2019/03/28：召開108年第3次中心會議。</li>
+                    <li class="list-group-item">2019/03/11：召開太空科學研究進度與成果第2次會議。</li>
+                    <li class="list-group-item">2019/02/21：召開108年第2次中心會議。</li>
+                    <li class="list-group-item">2019/01/19：舉辦「新太空發展研討會」。</li>
+                    <li class="list-group-item">2019/01/09：召開108年第1次中心會議。</li>
+                </ol>
+                <h4 class="text-primary mt-3">2018</h4>
+                <ol class="list-group list-group-numbered">
+                    <li class="list-group-item">2018/11/28：召開太空科學研究進度與成果第1次會議。</li>
+                    <li class="list-group-item">2018/11/14：召開107年第11次中心會議。</li>
+                    <li class="list-group-item">2018/11/07：召開107年第10次中心會議。</li>
+                    <li class="list-group-item">2018/10/31：召開107-1第1次教師評審委員會議。</li>
+                    <li class="list-group-item">2018/10/16：召開107年第9次中心會議。</li>
+                    <li class="list-group-item">2018/09/13：召開107年第8次中心會議。</li>
+                    <li class="list-group-item">2018/08/16：召開107年第7次中心會議。</li>
+                    <li class="list-group-item">2018/07/31：召開107年第6次中心會議。</li>
+                    <li class="list-group-item">2018/07/25：召開107年第5次中心會議。</li>
+                    <li class="list-group-item">2018/06/16：召開107年第4次中心會議。</li>
+                    <li class="list-group-item">2018/05/16：召開107年第3次中心會議。</li>
+                    <li class="list-group-item">2018/04/26：召開107年第2次中心會議。</li>
+                    <li class="list-group-item">2018/03/21：召開107年第1次中心會議。</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade text-dark" id="NIYModalToggle" aria-hidden="true" aria-labelledby="NIYToggleLabel" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="NIYToggleLabel">尚未完成</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                施工中... 尚未完成
+            </div>
+        </div>
+    </div>
+</div>

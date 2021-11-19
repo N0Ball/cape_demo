@@ -1,8 +1,13 @@
+*{
+    margin: 0;
+    padding: 0;
+}
 body {
     margin: 0;
     width: 100%;
     overflow-x: hidden;
     background-color: black !important;
+    color: white;
 }
 canvas{
     width: 100vw !important;
@@ -34,4 +39,42 @@ canvas{
     background: rgba(85, 85, 85, 0.9);
     transition: width 0.3s ease 0s, left 0.3s ease 0s;
     width: 0;
-  }
+}
+.carousel-item>img{
+    height: 75vh !important;
+    min-width: 100% !important;
+}
+.tip-down{
+    position: absolute;
+    bottom: 5rem;
+    left: calc(50% - 20px);
+    animation: tr-down .75s linear infinite;
+    z-index: 1000;
+}
+
+@keyframes tr-down{
+    30% {
+        transform: translateY(20px);
+    }
+    40% {
+        transform: translateY(20px);
+    }
+    60%{
+        transform: translateY(10px);
+    }
+    80%{
+        transform: translateY(20px);
+    }
+    85%{
+        transform: translateY(20px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+.nav-link.active{
+    background-color: transparent !important;
+}
+.min-vh-75{
+    min-height: 75vh !important;
+}
