@@ -1,9 +1,9 @@
-import * as THREE from "./threejs/three.module.js"
-import {FontLoader} from "./threejs/FontLoader.js"
-import {TextGeometry} from "./threejs/TextGeometry.js";
-import {Flow} from "./threejs/CurveModifier.js";
-import {GLTFLoader} from './threejs/GLTFLoader.js'
-import SHADER from "./threejs/shaders.js"
+import * as THREE from "/js/modules/threejs/three.module.js"
+import {FontLoader} from "/js/modules/threejs/FontLoader.js"
+import {TextGeometry} from "/js/modules/threejs/TextGeometry.js";
+import {Flow} from "/js/modules/threejs/CurveModifier.js";
+import {GLTFLoader} from '/js/modules/threejs/GLTFLoader.js'
+import SHADER from "/js/modules/shaders.js"
 
 const canvasContainer = document.getElementById('earth');
 
@@ -170,10 +170,10 @@ const sphere = new THREE.Mesh(
         fragmentShader: SHADER.globeFragmentShader(),
         uniforms: {
             globeTexture: {
-                value: new THREE.TextureLoader().load('/img/earth/EarthMap.jpg')
+                value: new THREE.TextureLoader().load('/src/earth/map.jpg')
             },
             globeBump: {
-                value: new THREE.TextureLoader().load('/img/earth/BumpMap.jpg')
+                value: new THREE.TextureLoader().load('/src/earth/bump.jpg')
             }
         }
     })
@@ -186,7 +186,7 @@ const cloud = new THREE.Mesh(
         fragmentShader: SHADER.cloudFragmentShader(),
         uniforms: {
             clouds: {
-                value: new THREE.TextureLoader().load('/img/earth/CloudsMap.png')
+                value: new THREE.TextureLoader().load('/src/earth/CloudsMap.png')
             }
         }
     })

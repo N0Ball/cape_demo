@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/modules/bootstrap.min.css">
+    <script src="/js/modules/bootstrap/bootstrap.bundle.min.js"></script>
+    <title>國立中央大學太空科學與科技研究中心</title>
+</head>
+<body>
+    <div include-html="/inc/header.html"></div>
+    <canvas id="earth"></canvas>
+    <div class="blank-canvas"></div>
+
+    <div class="m-5">
+        <div class="row g-0">
+            <div class="col-md-6">
+                <div class="card d-flex mx-auto" style="opacity: 0.6;">
+                    <div class="card-body">
+                        <h3 class="fw-bold">歡迎光臨太空科學與科技研究中心</h3>
+                        <p>
+                            太空科學與科技研究中心成立於民國107年，目標為整合過去50年之太空科學教育研究基礎與近30年之太空工程科技成果，
+                            完整建構立方小衛星與地面遙傳追蹤指令之任務控制中心。本太空研究中心之衛星科學任務為進行電離層天氣預報，
+                            以監測和確保衛星定位、導航、通訊品質與安全，並建置完成地震前兆、海嘯預警、空污遙測等系統。
+                            相關開發之太空衛星科技和觀測資料，將大幅提升我國太空科技和學術水準。
+                        </p>
+        
+                        <h3 class="fw-bold">整體現況</h3>
+                        <p>
+                            在太空科學方面，福衛一號觀察發現電離層電漿洞外，記錄有全世界最完整之低緯度電漿結構與動力，
+                            和低緯度不規則體變化與分佈，相關成果對民生和國防電波通訊應用至為重要。
+                            此外，福衛二號邊緣掃瞄大氣暉光，可研究探討高層和低層大氣波動耦合及交互作用。
+                            福衛三號掩星觀測除天氣預報之主要作業任務外，亦首次為人類提供三維電離層電子濃度結構和動力。
+                            藉此資料，本中心已發展全世界最先進之電離層太空天氣全球全電子含量監測模式，全球電子濃度三維現報和預報同化模式。
+                            此外，藉由福衛三號S4觀測資料，本中心亦建構完成全球電離層閃爍預報模式。
+                            上述四個同化和預測模式，大幅提升我國衛星定位、導航和通訊之監測與應用能力。
+                            研究團隊亦利用福衛一號和法國 DEMETER 衛星觀測資料，證實福衛五號先進電離層探測儀將可成為觀察地震孕震電場，
+                            以及電離層太空天氣不規則體變化和分佈之利器。<br>
+                            在太空科技方面，歷經我國第一期與第二期的國家太空科技發展長程計畫，
+                            本中心透過參與福爾摩沙衛星科學任務，確定科學酬載的發展方向。藉由探空火箭科學酬載計畫，到國外學習研製科學酬載，
+                            逐步掌握科學酬載的研製技術。經由福衛五號科學酬載先進電離層探測儀研製計畫的洗禮，大幅躍進科學酬載的研製能力。
+                            並在 2017 年福衛五號升空後，順利獲得高精度與高解析度的量測資料，確立自行研製的科學酬載已達成衛星等級的最高技術成熟度。
+                            透過此一成功的進程，未來希望推動年輕的學者與學生能嘗試發展更多樣的科學酬載，提升我國自主太空科學研究的能量。
+                        </p>
+
+                        <h3 class="fw-bold">研究空間</h3>
+                        <p>
+                            太空科學與工程研究所：<br>
+                            位於本校健雄館八樓全層與九樓半層的空間，加上中壢特高頻雷達站。
+                            擁有實驗室共計 9 間，研究總面積 663 m <sup>2</sup>。
+                            其中最具規模的實驗室有電離層電波科學實驗室、太空酬載實驗室－核心設備與教學設施、高空動力實驗室、
+                            中層大氣電學實驗室等，分別由四位核心成員所帶領。
+                            但在近年蓬勃發展下，研究空間已不敷使用。
+                            校方將暫時提供本校科學二館二樓約200 m <sup>2</sup>的面積，以容納衛星地面接收站、任務控制中心、關鍵實驗室等。
+                            其他需求待校方完成教研大樓後，再依實際需求調整。
+                        </p>
+                        <p>
+                            光電科學與工程學系：<br>
+                            位於本校國鼎光電大樓，為地上五層、地下一層之建築。
+                            擁有實驗室共計 58 間，總面積 3,344.9 m^2。
+                            主要研究設施包含薄膜技術中心、光學元件封裝與量測技術中心、積體光學、奈米光電、太陽能光電、光學設計、光學檢測、
+                            計算式光學影像、生醫影像、影像科學與工程、動態全像、奈微米光學、液晶光電、色彩光學、雷射光學等實驗室，
+                            完整建立光學設計、光學模擬計算、光學製造、光學檢測及光學封裝等各式軟硬體設備，為全國最具完善設施之光電研究群之一。
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 d-none d-md-block position-relative">
+                <div class="d-flex flex-column justify-content-center align-items-center" id="qrcode">
+                    <div class="card p-5 bg-transparent">
+                        <div class="card-body">
+                          <h3 class="card-title fw-bold text-center text-white">相關平台</h3>
+                        </div>
+                        <a href="https://www.facebook.com/NCUinSpace/" rel="external" target="_blank">
+                            <img src="/img/fb_qrcode.png" class="card-img-bottom img-fluid" alt="fb qrcode">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="d-md-none position-relative">
+            <div class="d-flex flex-column justify-content-center align-items-center">
+                <div class="card p-5 bg-transparent">
+                    <div class="card-body">
+                      <h3 class="card-title fw-bold text-center text-white">相關平台</h3>
+                    </div>
+                    <a href="https://www.facebook.com/NCUinSpace/" rel="external" target="_blank">
+                        <img src="/img/fb_qrcode.png" class="card-img-bottom img-fluid" alt="fb qrcode">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script type="module" src="/js/globe.js"></script>
+    <script src="/js/modules/include.js"></script>
+    <script type="module">
+        import {globeAnimation} from '/js/globe.js'
+        function animate(){
+            requestAnimationFrame(animate);
+            console.log()
+            globeAnimation();
+            const qrcode = document.getElementById('qrcode');
+            if(document.scrollingElement.scrollTop > window.innerHeight - 5){
+                qrcode.classList.add("platform-fixed");
+            }else{
+                qrcode.classList.remove("platform-fixed")
+            }
+        }
+
+        animate();
+        includeHTML();
+    </script>
+</body>
+</html>

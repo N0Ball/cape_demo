@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/modules/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/timeline.css">
+    <script src="./js/modules/bootstrap/bootstrap.bundle.min.js"></script>
+    <title>CAPE - Timeline</title>
+</head>
+<body>
+
+    <!-- Header -->
+    <div include-html="./inc/html/header.html"></div>
+
+    <!-- Timeline -->
+    <div class="timeline-container">
+        <div class="timeline">
+            <ul>
+                <li>
+                    <div class="timeline-content">
+                        <h4 class="date">20th May, 2021</h4>
+                        <h1>Heading 1</h1>
+                        <p>
+                            Heading 1111
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <div class="timeline-content">
+                        <h4 class="date">20th May, 2021</h4>
+                        <h1>Heading 2</h1>
+                        <p>
+                            Heading 222
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <div class="timeline-content">
+                        <h1>Heading 3</h1>
+                        <p>
+                            Heading 3333
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <div class="timeline-content">
+                        <h1>Heading 4</h1>
+                        <p>
+                            Heading 4444
+                        </p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Load HTML -->
+    <script type="module">
+        import {IncludeHTML} from "./js/modules/include.js";
+
+        class NewInclude extends IncludeHTML{
+            loadAfter(){
+                super.loadAfter();
+                const script = document.createElement('script');
+                script.src = './js/modules/masonry/masonry.pkgd.min.js';
+                document.body.appendChild(script);
+
+                const bootstrap = document.createElement('script');
+                bootstrap.src = './js/modules/bootstrap/bootstrap.bundle.min.js';
+                document.body.appendChild(bootstrap);
+
+                const url = document.URL.split('#')[1];
+
+                if(url){
+                    setTimeout(()=>{
+                        location.href = "#" + url;
+                        console.log("OUO");
+                    }, 500);
+                }
+            }
+        }
+
+        const include = new NewInclude();
+    </script>
+</body>
+</html>
