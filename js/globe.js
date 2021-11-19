@@ -116,7 +116,7 @@ class TextSatellite extends Satellite{
         );
 
         const loader = new FontLoader();
-        loader.load('/inc/Spider Home_Regular.json', (response) => {
+        loader.load('./inc/Spider Home_Regular.json', (response) => {
             font = response;
             const geometry = new TextGeometry( this.text, {
                 font: font,
@@ -170,10 +170,17 @@ const sphere = new THREE.Mesh(
         fragmentShader: SHADER.globeFragmentShader(),
         uniforms: {
             globeTexture: {
+<<<<<<< HEAD
                 value: new THREE.TextureLoader().load('/src/earth/map.jpg')
             },
             globeBump: {
                 value: new THREE.TextureLoader().load('/src/earth/bump.jpg')
+=======
+                value: new THREE.TextureLoader().load('./img/earth/EarthMap.jpg')
+            },
+            globeBump: {
+                value: new THREE.TextureLoader().load('./img/earth/BumpMap.jpg')
+>>>>>>> main
             }
         }
     })
@@ -186,7 +193,11 @@ const cloud = new THREE.Mesh(
         fragmentShader: SHADER.cloudFragmentShader(),
         uniforms: {
             clouds: {
+<<<<<<< HEAD
                 value: new THREE.TextureLoader().load('/src/earth/CloudsMap.png')
+=======
+                value: new THREE.TextureLoader().load('./img/earth/CloudsMap.png')
+>>>>>>> main
             }
         }
     })
