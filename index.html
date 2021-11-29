@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/timeline.css">
     <link rel="stylesheet" href="./css/modules/bootstrap.min.css">
     <title>CAPE - index</title>
 </head>
@@ -32,28 +33,77 @@
         <img width="40" height="40" src="./img/item/arrow.png" alt="arrow tip" class="tip-down">
     </div>
 
-        <!-- Dynamic Reports -->
-        <h3 class="d-flex text-white justify-content-center" id="DynamicReports">動態報導</h3>
-        <div include-html="./inc/html/dyReport.html" class="container"></div>
-
-        <!-- Satellite Missions -->
-        <h3 class="d-flex text-white justify-content-center m-5" id="SatMissions">衛星任務</h3>
-        <div class="container text-white fs-5">
-            <li class="ul">IDEASSat/INSPIRESat-2 ： 2020/01/24搭載SpaceX的獵鷹火箭順利發射</li>
-            <li class="ul">INSPIRESat-1</li>
-            <li class="ul">ILITE</li>
-            <li class="ul">ARCADE/INSPIRESat-4</li>
-            <li class="ul">PEARL</li>
-            <li class="ul">SCION-X/INSPIRESat-6</li>
-
-            <img src="./img/sat_mission.png" alt="sat mission image" class="img-fluid m-3">
+    <!-- Timeline -->
+    <h3 class="d-flex text-white justify-content-center m-5">動態報導</h3>
+    <div class="timeline-container">
+        <div class="timeline">
+            <ul>
+                <li>
+                    <div class="timeline-content">
+                        <h4 class="date">20th May, 2021</h4>
+                        <h1>【中大新聞】桃園市政府與中央大學攜手合作扎根基礎航太教育邁向太空產業時代</h1>
+                        <p>
+                            為促進桃園航空太空城發展、扎根基礎航太教育，桃園市政府與中央大學攜手合作，共同推動第一個跨出地球低軌道，挑戰「深太空」(deep space)，將臺灣自主研製產品納入登陸月球的太空任務。期能精進我國自行開發的衛星航電軟硬體、收集有利於太空科技開發的太空環境資料。
+                        </p>
+                        <img src="./img/reports/space.png" alt="lsl image" style="width: 100%; height: 30%;">
+                    </div>
+                </li>
+                <li>
+                    <div class="timeline-content">
+                        <h4 class="date">20th May, 2021</h4>
+                        <h1>【恭賀】本中心研究團隊榮獲2021「未來科技獎」</h1>
+                        <p>
+                            恭賀！本中心研究團隊榮獲及入圍2021「未來科技獎」共4項
+                        </p>
+                        <img src="./img/reports/future_award_0.jpg" alt="" style="width: 100%; height: 30%;">
+                        <img src="./img/reports/future_award_1.jpg" alt="" style="width: 100%; height: 30%;">
+                    </div>
+                </li>
+                <li>
+                    <div class="timeline-content">
+                        <h1>【中大新聞】中央大學太空系團隊　 電離層赤道異常區域觀測新發現</h1>
+                        <p>
+                            中央大學太空系團隊　 電離層赤道異常區域觀測新發現
+                        </p>
+                        <img src="./img/reports/lcl.jpg" alt="" style="width: 100%; height: 30%;">
+                        <p>
+                            研究過程中中大太空系張起維教授（右）團隊也給予許多專業建議，使研究成果更臻完善。圖左及圖中分別為劉正彥教授及博士生吳宗祐。太空系提供。
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <div class="timeline-content">
+                        <h1>【中大新聞】台灣太空科技的一大步　產學攜手挑戰國際登月任務</h1>
+                        <p>
+                            中央大學與陽翼先進科技公司完成視訊締約，將共同執行台灣首次的國際登月任務，並透過陽翼獨家代理的日本 SpaceBD 太空科技公司建立跨國產學發展計畫。陳如枝攝
+                        </p>
+                        <img src="./img/reports/moon.jpg" alt="" style="width: 100%; height: 30%;">
+                    </div>
+                </li>
+            </ul>
         </div>
-
-        <!-- Facilities -->
-        <h3 class="d-flex text-white justify-content-center m-5" id="Facilities">研究設施</h3>
-        <div include-html="./inc/html/facilities.html" class="container"></div>
-
     </div>
+
+    <!-- Dynamic Reports -->
+    <!-- <h3 class="d-flex text-white justify-content-center" id="DynamicReports">動態報導</h3>
+    <div include-html="./inc/html/dyReport.html" class="container"></div> -->
+
+    <!-- Satellite Missions -->
+    <h3 class="d-flex text-white justify-content-center m-5" id="SatMissions">衛星任務</h3>
+    <div class="container text-white fs-5">
+        <li class="ul">IDEASSat/INSPIRESat-2 ： 2020/01/24搭載SpaceX的獵鷹火箭順利發射</li>
+        <li class="ul">INSPIRESat-1</li>
+        <li class="ul">ILITE</li>
+        <li class="ul">ARCADE/INSPIRESat-4</li>
+        <li class="ul">PEARL</li>
+        <li class="ul">SCION-X/INSPIRESat-6</li>
+
+        <img src="./img/sat_mission.png" alt="sat mission image" class="img-fluid m-3">
+    </div>
+
+    <!-- Facilities -->
+    <h3 class="d-flex text-white justify-content-center m-5" id="Facilities">研究設施</h3>
+    <div include-html="./inc/html/facilities.html" class="container"></div>
 
 
     <!-- Load HTML -->
