@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./css/modules/bootstrap.min.css">
     <title>CAPE - index</title>
 </head>
@@ -14,9 +15,17 @@
     <div include-html="./inc/html/header.html"></div>
 
     <!-- Hero -->
-    <div class="container">
+    <!-- <div class="container">
         <h3 class="d-flex text-white justify-content-center mt-5 p-3">近況</h3>
         <div class="" include-html="./inc/html/hero.html" id="hero"></div>
+    </div> -->
+
+    <!-- Hero -->
+    <div class="w-100 h-75 mt-5 pt-5">
+        <img src="./img/hero/hero_1.png" alt="hero image" class="hero-img visible">
+        <img src="./img/hero/hero_2.png" alt="hero image" class="hero-img hidden">
+        <img src="./img/hero/hero_3.png" alt="hero image" class="hero-img hidden">
+        <img src="./img/hero/hero_4.jpg" alt="hero image" class="hero-img hidden">
     </div>
 
     <div class="d-flex justify-content-center align-items-center m-5">
@@ -51,6 +60,8 @@
     <script type="module">
         import {IncludeHTML} from "./js/modules/include.js";
 
+        const hero_imgs = document.getElementsByClassName('hero-img');
+
         class NewInclude extends IncludeHTML{
             loadAfter(){
                 super.loadAfter();
@@ -73,6 +84,35 @@
 
             }
         }
+
+        let index = 0;
+
+        function animate(){
+            
+            setTimeout(() => {
+                requestAnimationFrame(animate);
+
+                for (let i = 0; i < hero_imgs.length; i++){
+                    if (i == index){
+                        hero_imgs[i].classList.add('visible');
+                        hero_imgs[i].classList.remove('hidden');
+                    }else{
+                        hero_imgs[i].classList.add('hidden');
+                        hero_imgs[i].classList.remove('visible');
+                    }
+                }
+                
+                if (index ++ >= 3){
+                    index = 0;
+                }
+
+                console.log("Img updated!");
+
+            }, 2000);
+
+        }
+
+        animate();
 
         const include = new NewInclude();
     </script>

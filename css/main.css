@@ -16,6 +16,16 @@ canvas{
     position: fixed;
     opacity: .5;
 }
+.visible{
+    display: block;
+}
+.hidden{
+    display: none;
+}
+.hero-img{
+    height: 75vh;
+    width: 100vw;
+}
 .navbar{
     opacity: 0.8;
 }
