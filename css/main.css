@@ -16,6 +16,11 @@ canvas{
     position: fixed;
     opacity: .5;
 }
+small{
+    font-size: .75rem !important;
+    text-align: left;
+    padding-left: 1rem;
+}
 .visible{
     display: block;
 }
@@ -23,8 +28,9 @@ canvas{
     display: none;
 }
 .hero-img{
-    height: 75vh;
+    height: 100vh;
     width: 100vw;
+    overflow: hidden;
 }
 .navbar{
     opacity: 0.8;
